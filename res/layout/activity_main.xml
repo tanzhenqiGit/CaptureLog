@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/log_acquire_btn"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/log_acquire"/>
+    	<Button 
+    	    android:id="@+id/log_clear_btn"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/log_clear"/>
+
+    	<Spinner 
+    	    android:id="@+id/log_spinner"
+    	    android:layout_width="@dimen/text_width"
+    	    android:layout_height="@dimen/button_height"
+    	    />
+    	  
+    	<TextView
+        	android:id="@+id/log_path_name"
+        	android:layout_width="wrap_content"
+        	android:layout_height="@dimen/text_height"
+       	 />
+    </LinearLayout>
+    
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         >
+        <TextView 
+        	android:id="@+id/log_content"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="10sp"
+        />
+        
+    </ScrollView>
+ 
+
+</LinearLayout>
